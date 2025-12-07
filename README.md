@@ -188,6 +188,11 @@ Access the admin interface via your browser:
 
 **FIRST LOGIN ACTION**: Change the default admin email and password **immediately**!
 
+## ✨ NEXT STEPS: Configuration and Usage ##
+After this initial setup is complete, you can now set up your own proxy hosts with SSL Certificates to your own liking!
+
+My advice is to use the question mark icons on the different Hosts page options and Certificates page to get a better understanding of what they do and what their purpose is.
+
 ## 💡 Troubleshooting Common Issues ##
 
 | Issue | Fix |
