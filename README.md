@@ -17,12 +17,15 @@ For a basic setup and access to the admin panel:
 
 | Component | Recommendation | Notes |
 | :--- | :--- | :--- |
-| **CPU** | 1 core | Sufficient for handling proxy requests. |
-| **Memory** | 1 GB | Recommended. |
+| **General** | Hostname | Call it however you see fit (e.g. NGINX-Server). |
+| **General** | ✓ Enable Unpriviliged | Recommended. |
+| **General** | ✓ Enable Nesting | Required. |
+| **Template** | Debian 12 | Recommended. |
 | **Disk** | 4 GB | Recommended for OS and NPM configuration files. |
-| **Network** | `vmbr0` | Use a static IP address. |
-| **DNS** | 8.8.8.8 or 1.1.1.1 | |
-| **Template** | Debian 12-standard | |
+| **CPU** | 1 core | Sufficient for handling proxy requests. |
+| **Memory** | 1 GB (1024MB) | Recommended. |
+| **Network** | `vmbr0` | Use a static IP or DHCP reservation. (e.g. 192.168.20.x/24) |
+| **DNS** | 8.8.8.8 or 1.1.1.1 | Recommended. |
 
 ---
 
