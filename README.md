@@ -48,7 +48,7 @@ This configuration uses ```netplan``` for static IP assignment. Adjust the IP an
 ip a
 
 # Edit network configuration
-nano /etc/netplan/00-installer-config.yaml
+nano /etc/network/interfaces
 ```
 
 Add or replace the configuration with your network details:
