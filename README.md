@@ -53,22 +53,17 @@ nano /etc/netplan/00-installer-config.yaml
 
 Add or replace the configuration with your network details:
 ```bash
-network:
-  version: 2
-  renderer: networkd
-  ethernets:
-    eth0:  # Replace with your interface name
-      dhcp4: no
-      addresses:
-        - YOUR_IP_ADDRESS/24  # Replace with your desired IP
-      nameservers:
-        addresses:
-          - 8.8.8.8
-          - 1.1.1.1
-      routes:
-        - to: 0.0.0.0/0
-          via: YOUR_GATEWAY_IP  # Replace with your gateway
-          on-link: true
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+# The primary network interface
+auto eth0
+iface eth0 inet static
+    address YOUR_IP_ADDRESS
+    netmask YOUR_SUBNET_MASK
+    gateway YOUR_GATEWAY_IP_ADDRESS
+    dns-nameservers 8.8.8.8 1.1.1.1
 ```
 Apply the changes:
 
