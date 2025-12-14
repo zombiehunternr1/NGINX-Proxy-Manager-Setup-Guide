@@ -71,9 +71,7 @@ Ctrl + o → Enter → Ctrl + x
 
 Apply network configuration:
 ```Bash
-netplan generate
-netplan apply
-systemctl restart systemd-networkd
+systemctl restart networking
 ```
 
 ## 🐳 STEP 3 - Install Docker & Docker Compose ## 
